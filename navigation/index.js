@@ -1,5 +1,6 @@
-import { createAppContainer, createSwitchNavigator } from "react-navigation"
-import Welcome from "../screens/WelcomeScreen"
-const Navigator = createSwitchNavigator({Welcome})
+import { createAppContainer, createSwitchNavigator } from 'react-navigation'
+import Welcome from '../screens/welcome'
+
+const Navigator = createSwitchNavigator({ Welcome }, { initialRouteName: 'Welcome', headerMode: 'none' })
 
 export default createAppContainer(Navigator)
