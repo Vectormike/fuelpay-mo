@@ -1,12 +1,14 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { SafeAreaView, View, Text, Alert, Button } from 'react-native'
 import styles from './style'
 
 const WelcomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hi</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.button}>
+        <Button title='Gas Pay' onPress={() => Alert.alert('Left button pressed')} />
+      </View>
+    </SafeAreaView>
   )
 }
 
