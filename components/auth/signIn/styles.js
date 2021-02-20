@@ -21,12 +21,12 @@ const styles = StyleSheet.create({
     left: 110,
   },
   btn: {
-    position: 'relative',
+    position: 'absolute',
     backgroundColor: colors.primary,
-    borderRadius: 5,
+    borderRadius: 1,
     width: 340,
     height: 55,
-    top: 253,
+    top: 353,
     left: 110,
   },
 })
