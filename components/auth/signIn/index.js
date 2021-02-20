@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, TextInput, Button } from 'react-native'
+import { SafeAreaView, View, TextInput, Button } from 'react-native'
 import styles from './styles'
 
 const SignInForm = (props) => {
@@ -13,11 +13,11 @@ const SignInForm = (props) => {
     setDetails({ password: e.target.value })
   }
   return (
-    <View style={styles.form}>
+    <SafeAreaView style={styles.container}>
       <TextInput value='Email Address' style={styles.input} onChange={onEmailChange} />
       <TextInput value='Password' style={styles.input} onChange={onPasswordChange} />
-      <Button title='Login' style={styles.button} />
-    </View>
+      <Button title='Login' style={styles.btn} />
+    </SafeAreaView>
   )
 }
 
