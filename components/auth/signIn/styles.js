@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native'
 import colors from '../../../assets/colors/colors'
 
 const styles = StyleSheet.create({
-  form: {
+  container: {
+    flex: 1,
     position: 'absolute',
     // width: 175,
     // height: 30,
@@ -10,19 +11,23 @@ const styles = StyleSheet.create({
     // left: 120,
   },
   input: {
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#F6F6F6',
     borderRadius: 5,
+    borderWidth: 1,
     borderColor: '#E8E8E8',
-    margin: 10,
-    width: 175,
-    height: 30,
+    width: 340,
+    height: 55,
     top: 253,
     left: 110,
   },
-  button: {
-    position: 'absolute',
+  btn: {
+    position: 'relative',
     backgroundColor: colors.primary,
     borderRadius: 5,
+    width: 340,
+    height: 55,
+    top: 253,
+    left: 110,
   },
 })
 
