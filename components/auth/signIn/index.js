@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { SafeAreaView, View, Text, TextInput, Alert } from 'react-native'
 import AppButton from '../../button/index'
+import Form from '../../form/index'
 import styles from './styles'
 
 const SignInForm = (props) => {
@@ -20,9 +21,8 @@ const SignInForm = (props) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <TextInput value='Email Address' style={styles.input} onChange={onEmailChange} />
+      <Form value='Email Address' action={onEmailChange} />
       <TextInput value='Password' style={styles.input} onChange={onPasswordChange} />
-      <Text style={styles.btn}>Login</Text>
       <AppButton title='Login' onPress={onSubmit} />
     </SafeAreaView>
   )

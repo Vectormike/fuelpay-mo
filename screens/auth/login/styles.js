@@ -3,31 +3,19 @@ import colors from '../../../assets/colors/colors'
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: colors.backgroundLight,
-  },
-  header: {
-    color: colors.headerDark,
-    fontWeight: 'bold',
-    fontStyle: 'normal',
-    fontSize: 25,
-    lineHeight: 30,
-    display: 'flex',
-    alignItems: 'flex-end',
-    textAlign: 'center',
-    letterSpacing: -0.2,
-    position: 'absolute',
-    width: 175,
-    height: 30,
-    top: 143,
-    left: 120,
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
   },
   subHeader: {
     color: colors.gray,
+    position: 'absolute',
     width: 170,
     height: 18,
-    left: 130,
     top: 143,
+    bottom: 651,
+    left: 135,
   },
 })
 
