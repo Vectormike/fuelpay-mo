@@ -22,7 +22,7 @@ const SignInForm = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <Form value='Email Address' action={onEmailChange} />
-      <TextInput value='Password' style={styles.input} onChange={onPasswordChange} />
+      <Form value='Password' action={onPasswordChange} />
       <AppButton title='Login' onPress={onSubmit} />
     </SafeAreaView>
   )
